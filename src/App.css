@@ -2,37 +2,55 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ////// */
+.bar {
+  background-color: transparent;
+  align-items: stretch;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1em;
+  border-bottom: 0.1px solid gray;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1.5em;
+}
+
+.mtmPadding {
+  padding-left: 1.5em;
+}
+
+.drawerItem {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1em;
+  padding-top: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.text {
+  padding: 1em;
+  font-family: "Newsreader", serif;
+  font-size: x-large;
+  will-change: filter;
+  transition: filter 300ms;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.textBold {
+  padding: 1em;
+  font-family: "Newsreader", serif;
+  font-size: x-large;
+  will-change: filter;
+  transition: filter 300ms;
+  font-weight: 600;
+  cursor: default;
+}
+
+.drawer {
+  filter: invert(1);
+  /* siyah gözükmesi için */
+  cursor: pointer;
+  padding-right: 1.5em;
 }
